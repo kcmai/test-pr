@@ -20,22 +20,22 @@ export class EmployeeListComponent implements OnInit {
     this.reloadData();
   }
 
-  reloadData() {
-    this.employees = this.employeeService.getEmployeesList();
+  //reloadData() {
+    // this.employees = this.employeeService.getEmployeesList();
   }
 
   deleteEmployee(id: number) {
     this.employeeService.deleteEmployee(id)
       .subscribe(
         data => {
-          console.log(data);
-          this.reloadData();
+          // console.log(data);
+          // this.reloadData();
         },
-        error => console.log(error));
+        error => console.log('error'));
   }
 
   employeeDetails(id: number){
-    this.router.navigate(['details', id]);
+    // this.router.navigate(['details', id]);
   }
 
   updateEmployee(id: number){
