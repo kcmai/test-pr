@@ -31,7 +31,7 @@ export class EmployeeListComponent implements OnInit {
           // console.log(data);
           // this.reloadData();
         },
-        error => console.log(error));
+        error => console.log('error'));
   }
 
   employeeDetails(id: number){
